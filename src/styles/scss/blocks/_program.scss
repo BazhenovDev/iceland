@@ -1,0 +1,113 @@
+.program {
+  padding: 125px 0 90px;
+
+  .container {
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  &__slider {
+    &-images {
+      width: 400px;
+      height: 448px;
+      background-color: #fff;
+      grid-row: 1 / 5;
+
+      &:hover {
+        .program__slider-image {
+          transform: translate(55px, 34px);
+        }
+      }
+
+    }
+
+    &-image {
+      width: 400px;
+      height: 380px;
+      transform: translate(75px, 34px);
+      object-fit: cover;
+      transition: all .3s ease;
+    }
+
+
+    &-day {
+      font-size: 25px;
+      margin-bottom: 56px;
+
+      span {
+        font-size: 15px;
+        color: #a4a4a4;
+      }
+    }
+
+    &-title {
+      font-size: 20px;
+      margin-bottom: 25px;
+
+      span {
+        font-size: 15px;
+        color: #a4a4a4;
+      }
+    }
+
+    &-description {
+      max-height: 170px;
+      font-size: 16px;
+      color: $main-text-color;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+    }
+  }
+
+  .slick {
+    &-slide {
+      display: grid;
+      grid-template-columns: repeat(2, 475px);
+      grid-template-rows: repeat(4, auto);
+      justify-content: space-between;
+    }
+
+    &-prev {
+      top: unset;
+      left: unset;
+      bottom: 56px;
+      right: 428px;
+    }
+
+    &-next {
+      top: unset;
+      left: unset;
+      bottom: 56px;
+      right: 360px;
+    }
+
+    &-arrow {
+      width: 46px;
+      height: 46px;
+      border: 1px solid white;
+      z-index: 1;
+    }
+  }
+
+  .download {
+    position: absolute;
+    bottom: 15px;
+    right: 243px;
+
+    &-link {
+      font-size: 16px;
+      color: $main-text-color;
+      display: flex;
+    }
+
+    &-icon {
+      margin-right: 15px;
+    }
+  }
+}

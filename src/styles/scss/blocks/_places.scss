@@ -1,0 +1,114 @@
+.places {
+  padding: 100px 0 115px;
+  overflow: hidden;
+  &__title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 58px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 488px 445px;
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-between;
+  }
+  &__map {
+    grid-row: 1 / 4;
+    align-self: center;
+    position: relative;
+    max-width: 487px;
+    &-img {
+      max-width: 100%;
+    }
+    &-title {
+      color: $second-text-color;
+      font-family: "Acquestscript", sans-serif;
+      position: absolute;
+      font-size: 30px;
+      right: 115px;
+      bottom: 83px;
+    }
+    &-road {
+      position: absolute;
+      bottom: 38px;
+      left: 90px;
+    }
+    &-btns {
+      position: absolute;
+      display: grid;
+      grid-template-columns: 30px 65px 60px;
+      grid-template-rows: 82px 48px 50px;
+      bottom: 0;
+      left: -23px;
+      #btn {
+        &_first {
+          grid-row: 1;
+          grid-column: 1;
+          justify-self: flex-start;
+        }
+        &_second {
+          grid-row: 2;
+          grid-column: 2;
+          justify-self: flex-end;
+        }
+        &_third {
+          grid-row: 3;
+          grid-column: 2;
+          justify-self: flex-start;
+        }
+        &_four {
+          grid-row: 4;
+          grid-column: 2;
+          justify-self: center;
+        }
+        &_five {
+          grid-column: 3;
+          grid-row: 4;
+          justify-self: flex-end;
+        }
+      }
+    }
+    &-btn {
+      width: 25px;
+      height: 25px;
+      background-color: $circle-color;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all .3s ease;
+      &:hover {
+        background-color: $hover-color;
+      }
+      &_active {
+        background-color: $circle-color-active;
+      }
+    }
+  }
+  &__subtitle {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+  &__description {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  &__images {
+    max-width: 336px;
+    height: 325px;
+    background-color: $second-bg-color;
+    justify-self: flex-end;
+    &:hover {
+      .places__image {
+        transform: translate(-61px, calc(50% - 90px));
+      }
+    }
+  }
+  &__image {
+    transition: all .3s ease;
+    transform: translate(-81px, calc(50% - 90px));
+  }
+}
+

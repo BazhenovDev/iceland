@@ -1,0 +1,148 @@
+@import "libs/slick";
+@import "libs/slick-theme";
+@import "base/variables";
+@import "base/animation";
+@import "node_modules/animate.css/animate.css";
+@import "base/correct-libs";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //outline: 2px solid red !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $main-bg-color;
+  color: $main-text-color;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  &-text {
+    margin-left: 11px;
+    font-size: 15px;
+    color: $second-text-color;
+  }
+}
+
+.btn {
+  background-color: $main-btn-color;
+  border: 0;
+  color: $main-text-color;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.white-text {
+  color: $main-text-color
+}
+
+.title {
+  font-family: "MontserratSemiBold", sans-serif;
+  color: $main-text-color;
+}
+
+.circle {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .circle-icon {
+      transform: scale(1.2);
+    }
+  }
+
+  &-icon {
+    width: 11px;
+    fill: #fff;
+    transition: all .3s ease;
+  }
+
+  &_main {
+    max-width: 225px;
+  }
+
+  &-link {
+    width: 59px;
+    height: 59px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-text {
+    font-size: 18px;
+    color: $main-text-color;
+  }
+}
+
+.form {
+  &-border {
+    border: 1px solid #fff;
+    background: transparent;
+    &_error {
+      border: 1px solid red;
+    }
+  }
+  &-input {
+    padding: 20px 15px;
+    color: $main-text-color;
+    width: 336px;
+    margin-bottom: 20px;
+    &::placeholder {
+      color: $main-text-color;
+      font-size: 16px;
+    }
+  }
+}
+
+.error-text {
+  font-family: "MontserratMedium", sans-serif;
+  color: $error-text;
+  font-size: 12px;
+  animation: error-text 1s ease infinite;
+  position: relative;
+  top: -10px;
+  text-align: center;
+  display: none;
+}
+
+
+
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/about";
+@import "blocks/road";
+@import "blocks/places";
+@import "blocks/video";
+@import "blocks/program";
+@import "blocks/reviews";
+@import "blocks/gallery";
+@import "blocks/reservation";
+@import "blocks/footer";
+@import "blocks/message";
+@import "base/adaptive";
+

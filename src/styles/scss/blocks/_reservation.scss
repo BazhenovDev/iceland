@@ -1,0 +1,70 @@
+.reservation {
+  background: url("../images/reservation/reservation_img.png") center center / cover no-repeat;
+  padding: 90px 0 125px;
+
+  &__title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  &__form {
+    max-width: 350px;
+    margin: 0 auto;
+
+    &-peoples {
+      position: relative;
+
+      &-text {
+        font-size: 16px;
+        font-family: "MullerRegular", sans-serif;
+        margin-bottom: 20px;
+      }
+
+      .error {
+        &-text {
+          position: relative;
+          top: -30px;
+        }
+      }
+    }
+
+    &-items {
+      margin-bottom: 40px;
+      display: flex;
+      column-gap: 15px;
+    }
+
+    &-item {
+      width: 35px;
+      height: 35px;
+      color: $main-text-color;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      &_active {
+        background: #fff;
+        color: $second-text-color;
+      }
+    }
+
+    &-btn {
+      font-family: "MontserratMedium", sans-serif;
+      padding: 18px;
+      background: #fff;
+      border: none;
+      width: 336px;
+      font-size: 16px;
+      color: $second-text-color;
+      cursor: pointer;
+    }
+  }
+}

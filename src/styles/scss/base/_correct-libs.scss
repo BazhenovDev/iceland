@@ -1,0 +1,22 @@
+.hvr {
+  &-sweep {
+    &-to {
+      &-top {
+        &:before {
+          background: $circle-color-active;
+          color: $main-text-color;
+        }
+      }
+    }
+  }
+  &-shutter {
+    &-out {
+      &-horizontal {
+        &:before {
+          color: $main-text-color;
+          background: $circle-color-active;
+        }
+      }
+    }
+  }
+}

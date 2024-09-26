@@ -1,0 +1,70 @@
+.footer {
+  background: $second-bg-color;
+  padding: 28px 0 29px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    display: flex;
+
+    &-icon {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: $main-bg-color;
+      margin: 0 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all .3s ease;
+
+      &:hover {
+        opacity: .9;
+
+        .instagram {
+          fill: rgba(255, 105, 180, 0.73);
+        }
+
+        .vk {
+          fill: cornflowerblue;
+        }
+
+        .telegram {
+          fill: #00a6ff;
+        }
+      }
+    }
+  }
+
+  .phone {
+    font-size: 15px;
+    color: $second-text-color;
+    text-decoration: none;
+  }
+}
+
+.instagram {
+  transition: all .3s ease;
+  width: 27px;
+  height: 27px;
+  fill: $main-text-color;
+}
+
+.vk {
+  transition: all .3s ease;
+  width: 33px;
+  height: 19px;
+  fill: $main-text-color;
+}
+
+.telegram {
+  transition: all .3s ease;
+  width: 25px;
+  height: 23px;
+  fill: $main-text-color;
+}
+

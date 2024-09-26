@@ -1,0 +1,38 @@
+.about {
+  padding: 120px 0 90px;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px auto;
+    justify-content: space-between;
+    grid-gap: 50px;
+  }
+  &__images {
+    max-width: 400px;
+    height: 448px;
+    background-color: $second-bg-color;
+    grid-row: 1 / 3;
+    &:hover {
+      .about__image {
+        transform: translate(23px, calc(50% - 76px));
+      }
+    }
+  }
+  &__image {
+    max-width: 457px;
+    transform: translate(43px, calc(50% - 76px));
+    transition: all .3s ease;
+  }
+  &__title {
+    font-size: 35px;
+    width: 445px;
+    justify-self: flex-end;
+  }
+  &__description {
+    font-size: 16px;
+    max-width: 445px;
+    justify-self: flex-end;
+    color: $main-text-color;
+  }
+}
+

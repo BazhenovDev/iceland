@@ -1,0 +1,97 @@
+.main {
+  background-color: $second-bg-color;
+  padding: 110px 0 347px;
+  overflow: hidden;
+  &__wrapper {
+    position: relative;
+  }
+  &__title {
+    position: relative;
+    z-index: 2;
+    font-size: 60px;
+    margin-bottom: 35px;
+    letter-spacing: -0.3px;
+    color: $second-text-color
+  }
+
+  &__subtitle {
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 0.3px;
+    margin-bottom: 61px;
+    z-index: 2;
+    color: $second-text-color;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 2;
+    font-family: "MontserratMedium", sans-serif;
+    padding: 22px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 79px;
+    .arrow {
+      transition: all .3s ease;
+      height: 16px;
+      fill: $main-text-color;
+    }
+    &:hover {
+      .arrow {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  &__images {
+    position: absolute;
+    top: -110px;
+    left: 280px;
+    z-index: 1;
+  }
+
+  &__road {
+    position: absolute;
+    z-index: 2;
+    left: calc(50% - 70px);
+    top: 50%;
+  }
+  .road {
+    &-text {
+      font-size: 14px;
+      font-family: "MontserratMedium", sans-serif;
+      color: $second-text-color;
+      &-span {
+        display: block;
+      }
+    }
+    &-data {
+      position: absolute;
+      bottom: -40px;
+      &-year {
+        display: inline;
+      }
+    }
+    &-price {
+      position: absolute;
+      top: -20px;
+      left: 85px;
+    }
+    &-place {
+      position: absolute;
+      right: -100px;
+      top: -40px;
+    }
+  }
+  &_mobile {
+    display: none;
+  }
+
+}

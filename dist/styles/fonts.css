@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MontserratSemiBold";
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "MontserratMedium";
+    src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Acquestscript";
+    src: url("../fonts/acquestscript.ttf");
+}
+
+@font-face {
+    font-family: "Corinthia";
+    src: url("../fonts/corinthia.ttf");
+}
+
+@font-face {
+    font-family: "MullerRegular";
+    src: url("../fonts/MullerRegular.otf");
+}

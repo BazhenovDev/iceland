@@ -1,0 +1,75 @@
+.reviews {
+  padding: 90px 0 90px;
+  &__title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__slider {
+    background-color: $second-bg-color;
+    padding: 55px;
+    .slick {
+      &-slide {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+      }
+      &-prev {
+        width: 46px;
+        height: 46px;
+        border: 1px solid $main-bg-color;
+        left: 55px;
+        top: unset;
+        bottom: 32px;
+        z-index: 1;
+        &:before {
+          color: $main-bg-color;
+        }
+      }
+      &-next {
+        width: 46px;
+        height: 46px;
+        border: 1px solid $main-bg-color;
+        left: 107px;
+        top: unset;
+        bottom: 32px;
+        z-index: 1;
+        &:before {
+          color: $main-bg-color;
+        }
+      }
+    }
+    &-info {
+      max-width: 450px;
+    }
+    &-title {
+      font-size: 20px;
+      color: $second-text-color;
+      margin-bottom: 25px;
+    }
+    &-rating {
+      display: block;
+      font-size: 16px;
+      color: $second-text-color;
+      font-family: "MontserratSemiBold", sans-serif;
+      margin-bottom: 36px;
+    }
+    &-description {
+      font-size: 16px;
+      color: $second-text-color;
+      max-height: 220px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+    }
+    &-images {
+      align-self: center;
+    }
+    &-image {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+
+}

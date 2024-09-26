@@ -1,0 +1,93 @@
+.road {
+  padding: 90px 0 100px;
+
+  &__line {
+    background: url("../../dist/images/road/about_road.png") center center / cover no-repeat;
+    height: 600px;
+  }
+
+  &__title {
+    font-size: 35px;
+    margin: 0 auto;
+    max-width: 570px;
+    text-align: center;
+    color: $main-text-color;
+  }
+
+  &__line {
+    padding-top: 60px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-template-rows: 280px;
+    grid-gap: 40px 100px;
+    list-style-type: none;
+  }
+
+  &__item {
+    max-width: 243px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      .road__item-circle {
+        background: $hover-color;
+      }
+    }
+
+    &:nth-child(even) {
+      grid-row: 2;
+      justify-self: flex-end;
+
+      .road__item {
+        &-circle {
+          order: 2;
+        }
+
+        &-title {
+          order: 0;
+        }
+
+        &-description {
+          order: 1;
+          margin-bottom: 35px;
+          color: $main-text-color;
+        }
+      }
+    }
+
+    &:nth-child(odd) {
+      justify-self: flex-start;
+    }
+
+    &-circle {
+      width: 75px;
+      height: 75px;
+      background: $second-bg-color;
+      border-radius: 50px;
+      margin: 0 auto 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .3s ease;
+    }
+
+    &-number {
+      font-size: 30px;
+      color: $second-text-color;
+    }
+
+    &-title {
+      font-size: 18px;
+      margin-bottom: 21px;
+    }
+
+    &-description {
+      font-size: 14px;
+    }
+  }
+}
